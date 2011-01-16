@@ -1,0 +1,7 @@
+author: Thibaut LE LEVIER, Labo Apple Ingésup
+summary: Utilise le trombinoscope Ingésup en fonction du login Redmine (login = ingé-id)
+homepage: http://github.com/tiboll/ingesup-avatar-redmine
+plugin: git://github.com/tiboll/ingesup-avatar-redmine.git
+licence: none
+version: 0.1
+rails_version: 1.0+

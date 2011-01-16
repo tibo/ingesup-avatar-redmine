@@ -1,0 +1,32 @@
+== Ingesup Avatar Plugin
+
+Plugin dérivé du plugin "Gravatar" installé de base avec Redmine
+
+== Installation
+
+installer le plugin dans /vendor/plugins
+
+modifer la fonction le ficher /app/helpers/application_helper.rb
+
+  def avatar(user, options = { })
+    if Setting.gravatar_enabled?
+      options.merge!({:ssl => (defined?(request) && request.ssl?), :default => Setting.gravatar_default})
+	  return ingesup_avatar(user.login, options)
+    else
+      ''
+    end
+  end
+
+== Author
+
+  Thibaut LE LEVIER
+  http://www.lelevier.fr
+
+Original Gravatar Plugin:
+  Scott A. Woods
+  West Arete Computing, Inc.
+  http://westarete.com
+  scott at westarete dot com
+
+== Todo
+compatibilité avec les images par défaut
