@@ -2,6 +2,8 @@
 
 Plugin dérivé du plugin "Gravatar" installé de base avec Redmine
 
+<img alt="screenshot" src="http://static.lelevier.fr/images/github/redmine-plugin-ingesup-avatar.png" /><br />
+
 == Installation
 
 installer le plugin dans /vendor/plugins
